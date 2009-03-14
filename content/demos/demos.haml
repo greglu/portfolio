@@ -1,0 +1,36 @@
+%h1
+  Demos
+  
+.block
+  %h2
+    Metranome
+  %p
+    %a{ :href => "http://www.metrano.me", :target => "_blank" } Metranome
+    is a personal project that I've been working on independently for half a year. It is a collaborative information network which aims to bring classmates together to share and view course resources such as computer files, textbooks, and websites. This information is then presented contextually within a student's courses, or through a site wide search.
+  %p
+    I wanted Metranome to support any number of educational institutions, and therefore incorporated a model similar to Wikipedia, where students had the ability to add or edit all the information (such as program and course listings specific to each university) in order to keep everything updated.
+  %p
+    My primary motivation for creating Metranome was to provide a venue where I could implement my web development abilities in a single, independent project. Since I was under no pressure of deadlines or requirement constraints, I was able to practice my project design and development skills in a creative outlet so that I could showcase some of my work.
+  %p
+    Through Metranome, I was able to put into practice BDD (achieving a 2:1 test to code ratio), many AJAX implementations, web services, RSS feeds, capistrano automated application deployment, GIT, Github, and Amazon Web Services (S3 and EC2). I also researched many other topics which I hope to (soon) put into practice such as scaling web applications (Rails specifically), cloud computing, memcached, more robust automated backup procedures, and web presence/promotion.
+  %p
+    Metranome is currently live and can be found at
+    %a{ :href => "http://www.metrano.me", :target => "_blank" } www.metrano.me.
+    Below is a screencast I created to demonstrate the site's functionality.
+  .center
+    %object{ :type => "application/x-shockwave-flash", :height => "344", :data => "http://www.screentoaster.com/swf/STPlayer.swf", :width => "425" }
+      %param{ :name => "movie", :value => "http://www.screentoaster.com/swf/STPlayer.swf" }/
+      %param{ :name => "allowFullScreen", :value => "true" }/
+      %param{ :name => "flashvars", :value => "video=stVEpTQ0ZLTFheQVhVWVJb" }/
+
+.block
+  %h2
+    This Portfolio
+  %p
+    Although this portfolio seems like a pretty standard website, it was in fact created with
+    %a{ :href => "http://nanoc.stoneship.org/", :target => "_blank" } Nanoc,
+    &quot;a Ruby CMS that generates static HTML.&quot; I chose to use this tool because it allowed me to create this site with the
+    %a{ :href => "http://haml.hamptoncatlin.com/", :target => "_blank" } HAML templating language
+    without the need for a full blown framework. The source code for this portfolio can be found on
+    %a{ :href => "https://github.com/enell/portfolio/", :target => "_blank" } my Github page.
+    

@@ -1,0 +1,6 @@
+# Built-in
+filters_pre: [ 'haml' ]
+
+# Custom 
+title: Skills
+name: skills

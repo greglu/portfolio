@@ -1,0 +1,9 @@
+reps:
+  default: {}
+
+# Built-in
+filters_pre: [ 'haml' ]
+
+# Custom 
+title: About
+name: about

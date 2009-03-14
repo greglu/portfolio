@@ -1,0 +1,6 @@
+# Built-in
+filters_pre: [ 'haml' ]
+
+# Custom 
+title: Demos
+name: demos
