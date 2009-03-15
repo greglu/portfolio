@@ -383,6 +383,9 @@ input.button {
 	padding: 0 0 30px 0;	
 	display: inline;	
 }
+.footer-info {
+	margin: 10px 0;
+}
 
 /* alignment classes */
 .float-left  { float: left; }
