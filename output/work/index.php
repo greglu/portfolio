@@ -50,6 +50,9 @@
           <li><a href="/skills/index.php">skills</a></li>
           <li><a id="current" href="/work/index.php">work</a></li>
           <li>
+            <a href='http://www.greglu.com/blog'>Blog</a>
+          </li>
+          <li>
             <a href='/Gregory_Lu-CV.pdf'>CV</a>
           </li>
         </ul>
@@ -174,13 +177,13 @@
           </h2>
           <ul class='columns'>
             <li class='top'>
-              <a href='http://github.com/enell' target='_blank'>
-                <strong>Github Profile</strong>
+              <a href='http://www.greglu.com/blog' target='_blank'>
+                <strong>My Blog</strong>
               </a>
             </li>
             <li>
-              <a href='http://g-lunit.blogspot.com' target='_blank'>
-                <strong>Development Blog</strong>
+              <a href='http://github.com/enell' target='_blank'>
+                <strong>Github Profile</strong>
               </a>
             </li>
             <li>
