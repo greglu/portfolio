@@ -122,7 +122,7 @@
             <a href='http://www.greglu.com/blog' target='_blank'>Blog Feed</a>
           </h1>
           <?php
-          require_once("rsslib.php");
+          require_once($_SERVER["DOCUMENT_ROOT"] . "/rsslib.php");
           $url = "http://greglu.com/blog/feed/";
           echo RSS_Display($url, 5);
           ?>
@@ -130,7 +130,7 @@
             <a href='http://github.com/enell' target='_blank'>Github Feed</a>
           </h1>
           <?php
-          require_once("atomlib.php");
+          require_once($_SERVER["DOCUMENT_ROOT"] . "/atomlib.php");
           $url = "http://github.com/enell.atom";
           echo Atom_Display($url, 5);
           ?>
