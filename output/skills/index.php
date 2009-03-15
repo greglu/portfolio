@@ -3,7 +3,7 @@
   <head>
     <title>
       Greg Lu
-       - Work
+       - Skills
     </title>
     <meta content='text/html; charset=iso-8859-1' http-equiv='Content-Type' />
     <link href='/css/EliteCircle.css' rel='stylesheet' type='text/css' />
@@ -45,10 +45,10 @@
           </p>
         </div>
         <ul>
-          <li><a href="/">about</a></li>
-          <li><a href="/demos/">demos</a></li>
-          <li><a href="/skills/">skills</a></li>
-          <li><a id="current" href="/work/">work</a></li>
+          <li><a href="/index.php">about</a></li>
+          <li><a href="/demos/index.php">demos</a></li>
+          <li><a id="current" href="/skills/index.php">skills</a></li>
+          <li><a href="/work/index.php">work</a></li>
           <li>
             <a href='/Gregory_Lu-CV.pdf'>CV</a>
           </li>
@@ -59,63 +59,135 @@
       <div id='content'>
         <div id='main'>
           <h1>
-            Work
+            Skills and Tools
           </h1>
-          <div class='block'>
-            <a href='/images/support.png' rel='lightbox' title='Interfacing Knowledge Center: Issue tracking focused towards clients.'>
-              <img align='left' alt='Interfacing Knowledge Center' height='100' src='/images/support.png' width='100' />
-            </a>
-            <span class='title'>
-              Interfacing Knowledge Center
-            </span>
-            <p>
-              I was contracted to design and develop an issue tracking system for Interfacing, a software company based in Montreal. Interfacing was looking to build a solution to provide their clients with a more direct line of support, by allowing them to report bugs and get live updates and patches through an online system. My main responsibility was project management, however I was also responsible for design, and a significant portion of the development. The project was implemented with a heavily modified version of
-              <a href='http://www.redmine.org' target='_blank'>Redmine</a>
-              for the base of the application, and a Flex front end for the client portal that called on web services from Redmine to populate the data. The contract was completed on time, on budget, and according to specifications.
-            </p>
-            <div class='expandable'>
-              <p>
-                The tools and technologies used in this project included:
-              </p>
-              <ul>
-                <li>
-                  Ruby on Rails
-                </li>
-                <li>
-                  MySQL
-                </li>
-                <li>
-                  Adobe Flex
-                </li>
-                <li>
-                  Rspec
-                </li>
-                <li>
-                  Git / Github
-                </li>
-                <li>
-                  Capistrano
-                </li>
-                <li>
-                  WSDL Web Services
-                </li>
-                <li>
-                  <a href='http://www.sugarcrm.com/crm/' target='_blank'>Sugar CRM integration</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class='block'>
-            <a href='/images/voffice.jpg' rel='lightbox' title='Virtual Office: Meeting Room - Company collaboration tool.'>
-              <img align='left' alt='Virtual Office: Meeting Room' height='100' src='/images/voffice.jpg' width='100' />
-            </a>
-            <span class='title'>
-              Virtual Office: Meeting Room
-            </span>
-            <p>
-              For the senior design project of my university degree, my group was tasked with creating a web application for businesses similar to Campfire within one semester. The idea was to create a type of company meeting room where employees and clients can meet up to discuss, share files, show powerpoint presentations and use a whiteboard. I recommended the use of Ruby on Rails, and due to my experience, I was the de facto lead developer. Although aesthetically crude, I had a chance to implement push server technology (Juggernaut plugin for Ruby on Rails) and many other interesting AJAX functionality.
-            </p>
-          </div>
+          <h2>
+            Web Development
+          </h2>
+          <ul>
+            <li>
+              <a href='http://rubyonrails.org/' target='_blank'>Ruby on Rails:</a>
+              web framework
+            </li>
+            <li>
+              <a href='http://rspec.info/' target='_blank'>Rspec:</a>
+              Behavior Driven Development (BDD) framework
+            </li>
+            <li>
+              <a href='http://www.mysql.com/' target='_blank'>MySQL:</a>
+              open source database
+            </li>
+            <li>
+              <a href='http://php.net/' target='_blank'>PHP:</a>
+              web development scripting language
+            </li>
+            <li>
+              <a href='#'>AJAX / Javascript:</a>
+              interactive web application technology
+            </li>
+            <li>
+              <a href='#'>XHTML, CSS:</a>
+              web technologies
+            </li>
+            <li>
+              <a href='#'>REST, SOAP:</a>
+              web services
+            </li>
+            <li>
+              <a href='#'>RSS, Atom:</a>
+              standardized web syndication
+            </li>
+            <li>
+              <a href='http://seleniumhq.org/' target='_blank'>Selenium</a>
+              ,
+              <a href='http://wtr.rubyforge.org/' target='_blank'>WATIR:</a>
+              web application testing
+            </li>
+            <li>
+              <a href='http://aws.amazon.com/' target='_blank'>Amazon Web Services:</a>
+              cloud computing for web applications
+            </li>
+            <li>
+              <a href='http://haml.hamptoncatlin.com/' target='_blank'>HAML:</a>
+              templating language
+            </li>
+          </ul>
+          <h2>
+            Project Management
+          </h2>
+          <ul>
+            <li>
+              <a href='http://www.capify.org/' target='_blank'>Capistrano:</a>
+              automated deployment
+            </li>
+            <li>
+              <a href='http://git-scm.com/' target='_blank'>GIT</a>
+              ,
+              <a href='http://subversion.tigris.org/' target='_blank'>Subversion</a>
+              ,
+              <a href='http://www.perforce.com/' target='_blank'>Perforce:</a>
+              revision control systems
+            </li>
+            <li>
+              <a href='http://www.github.com' target='_blank'>Github:</a>
+              social coding and collaboration
+            </li>
+            <li>
+              <a href='http://lighthouseapp.com/' target='_blank'>Lighthouse</a>
+              ,
+              <a href='http://trac.edgewall.org/' target='_blank'>Trac</a>
+              ,
+              <a href='http://www.redmine.org/' target='_blank'>Redmine</a>
+              ,
+              <a href='http://www.basecamphq.com/' target='_blank'>Basecamp:</a>
+              project management and issue tracking
+            </li>
+            <li>
+              <a href='http://www.campfirenow.com/' target='_blank'>Campfire:</a>
+              project collaboration
+            </li>
+          </ul>
+          <h2>
+            Miscellaneous
+          </h2>
+          <ul>
+            <li>
+              Programming Languages: Java, C, C++
+            </li>
+            <li>
+              Operating Systems: Windows, Mac OS X, Linux
+            </li>
+            <li>
+              Productivity and Office Software: Microsoft Office and Adobe Photoshop
+            </li>
+          </ul>
+        </div>
+        <div id='sidebar'>
+          <h1>
+            <a href='http://www.greglu.com/blog' target='_blank'>Blog Feed</a>
+          </h1>
+          <?php
+          require_once("rsslib.php");
+          $url = "http://greglu.com/blog/feed/";
+          echo RSS_Display($url, 5);
+          ?>
+          <h1>
+            <a href='http://github.com/enell' target='_blank'>Github Feed</a>
+          </h1>
+          <?php
+          require_once("atomlib.php");
+          $url = "http://github.com/enell.atom";
+          echo Atom_Display($url, 5);
+          ?>
+          <h1>
+            Wise Words
+          </h1>
+          <p>
+            "Always code as if the person who will maintain your code is a maniac serial killer that knows where you live."
+          </p>
+          <p class='align-right'>
+            - Unknown
+          </p>
         </div>
       </div>
     </div>

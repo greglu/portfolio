@@ -1,6 +1,6 @@
 # Built-in 
 filters_pre: []
-extension: html
+extension: php
 filters_post: []
 skip_output: false
 filename: index

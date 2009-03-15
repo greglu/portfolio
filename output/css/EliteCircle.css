@@ -266,7 +266,7 @@ input.button {
 	clear: both;
 	float: left;
 	width: 100%;
-	background-color: #fff;
+	background: #FFF url(/images/contentbg.jpg) repeat-y center top;
 }
 #content {
 	text-align: left;	
@@ -304,10 +304,10 @@ input.button {
 
 /* main */
 #main {
-	margin: 0; 
+	margin: 0 19px 0 0; 
 	padding: 0;		
-	width: 790px;
-	float: left;	
+	width: 590px;
+	float: left;
 }
 #main p, #main h1, #main h2, #main h3, #main blockquote, #main form {
 	margin-left: 0;

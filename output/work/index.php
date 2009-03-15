@@ -3,7 +3,7 @@
   <head>
     <title>
       Greg Lu
-       - About
+       - Work
     </title>
     <meta content='text/html; charset=iso-8859-1' http-equiv='Content-Type' />
     <link href='/css/EliteCircle.css' rel='stylesheet' type='text/css' />
@@ -45,10 +45,10 @@
           </p>
         </div>
         <ul>
-          <li><a id="current" href="/">about</a></li>
-          <li><a href="/demos/">demos</a></li>
-          <li><a href="/skills/">skills</a></li>
-          <li><a href="/work/">work</a></li>
+          <li><a href="/index.php">about</a></li>
+          <li><a href="/demos/index.php">demos</a></li>
+          <li><a href="/skills/index.php">skills</a></li>
+          <li><a id="current" href="/work/index.php">work</a></li>
           <li>
             <a href='/Gregory_Lu-CV.pdf'>CV</a>
           </li>
@@ -59,33 +59,89 @@
       <div id='content'>
         <div id='main'>
           <h1>
-            About
+            Work
+          </h1>
+          <div class='block'>
+            <a href='/images/support.png' rel='lightbox' title='Interfacing Knowledge Center: Issue tracking focused towards clients.'>
+              <img align='left' alt='Interfacing Knowledge Center' height='100' src='/images/support.png' width='100' />
+            </a>
+            <span class='title'>
+              Interfacing Knowledge Center
+            </span>
+            <p>
+              I was contracted to design and develop an issue tracking system for Interfacing, a software company based in Montreal. Interfacing was looking to build a solution to provide their clients with a more direct line of support, by allowing them to report bugs and get live updates and patches through an online system. My main responsibility was project management, however I was also responsible for design, and a significant portion of the development. The project was implemented with a heavily modified version of
+              <a href='http://www.redmine.org' target='_blank'>Redmine</a>
+              for the base of the application, and a Flex front end for the client portal that called on web services from Redmine to populate the data. The contract was completed on time, on budget, and according to specifications.
+            </p>
+            <div class='expandable'>
+              <p>
+                The tools and technologies used in this project included:
+              </p>
+              <ul>
+                <li>
+                  Ruby on Rails
+                </li>
+                <li>
+                  MySQL
+                </li>
+                <li>
+                  Adobe Flex
+                </li>
+                <li>
+                  Rspec
+                </li>
+                <li>
+                  Git / Github
+                </li>
+                <li>
+                  Capistrano
+                </li>
+                <li>
+                  WSDL Web Services
+                </li>
+                <li>
+                  <a href='http://www.sugarcrm.com/crm/' target='_blank'>Sugar CRM integration</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class='block'>
+            <a href='/images/voffice.jpg' rel='lightbox' title='Virtual Office: Meeting Room - Company collaboration tool.'>
+              <img align='left' alt='Virtual Office: Meeting Room' height='100' src='/images/voffice.jpg' width='100' />
+            </a>
+            <span class='title'>
+              Virtual Office: Meeting Room
+            </span>
+            <p>
+              For the senior design project of my university degree, my group was tasked with creating a web application for businesses similar to Campfire within one semester. The idea was to create a type of company meeting room where employees and clients can meet up to discuss, share files, show powerpoint presentations and use a whiteboard. I recommended the use of Ruby on Rails, and due to my experience, I was the de facto lead developer. Although aesthetically crude, I had a chance to implement push server technology (Juggernaut plugin for Ruby on Rails) and many other interesting AJAX functionality.
+            </p>
+          </div>
+        </div>
+        <div id='sidebar'>
+          <h1>
+            <a href='http://www.greglu.com/blog' target='_blank'>Blog Feed</a>
+          </h1>
+          <?php
+          require_once("rsslib.php");
+          $url = "http://greglu.com/blog/feed/";
+          echo RSS_Display($url, 5);
+          ?>
+          <h1>
+            <a href='http://github.com/enell' target='_blank'>Github Feed</a>
+          </h1>
+          <?php
+          require_once("atomlib.php");
+          $url = "http://github.com/enell.atom";
+          echo Atom_Display($url, 5);
+          ?>
+          <h1>
+            Wise Words
           </h1>
           <p>
-            I'm currently living in Montreal, studying towards a Software Engineering degree at
-            <a href='http://www.mcgill.ca' target='_blank'>McGill University.</a>
-             I have been doing web development for over 6 years now, starting with PHP and then moving to database backed web applications with MySQL. For the past 3 years, I've been working with Ruby on Rails professionally for creating web applications, but have worked with many other languages and technologies throughout my own explorations and university studies.
+            "Always code as if the person who will maintain your code is a maniac serial killer that knows where you live."
           </p>
-          <p>
-            In terms of development, I'm a strong believer in
-            <a href='http://en.wikipedia.org/wiki/Test_driven_development' target='_blank'>Test</a>
-            /
-            <a href='http://en.wikipedia.org/wiki/Behavior_Driven_Development' target='_blank'>Behavior</a>
-            Driven Development, writing DRY code (see wise words on the right), and the use of frameworks. I'm a strong opponent against the
-            <a href='http://en.wikipedia.org/wiki/Waterfall_model' target='_blank'>waterfall development model</a>
-            for the majority of projects (although it is required in very rare cases), and instead opt for more iterative approaches like
-            <a href='http://en.wikipedia.org/wiki/Agile_software_development' target='_blank'>agile</a>
-            or
-            <a href='http://en.wikipedia.org/wiki/Scrum_(development)' target='_blank'>scrum</a>
-            .
-          </p>
-          <p>
-            Project management and design is where I hope to expand my career more towards, but I also enjoy development just as much.
-          </p>
-          <p>
-            Please refer to the other sections of my portfolio, and feel free to
-            <a href='#' onclick="$.scrollTo( '#contact', 1000 );">contact me</a>
-            with the information below if you have any questions.
+          <p class='align-right'>
+            - Unknown
           </p>
         </div>
       </div>

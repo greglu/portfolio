@@ -45,10 +45,10 @@
           </p>
         </div>
         <ul>
-          <li><a href="/">about</a></li>
-          <li><a id="current" href="/demos/">demos</a></li>
-          <li><a href="/skills/">skills</a></li>
-          <li><a href="/work/">work</a></li>
+          <li><a href="/index.php">about</a></li>
+          <li><a id="current" href="/demos/index.php">demos</a></li>
+          <li><a href="/skills/index.php">skills</a></li>
+          <li><a href="/work/index.php">work</a></li>
           <li>
             <a href='/Gregory_Lu-CV.pdf'>CV</a>
           </li>
@@ -104,6 +104,33 @@
               <a href='https://github.com/enell/portfolio/' target='_blank'>my Github page.</a>
             </p>
           </div>
+        </div>
+        <div id='sidebar'>
+          <h1>
+            <a href='http://www.greglu.com/blog' target='_blank'>Blog Feed</a>
+          </h1>
+          <?php
+          require_once("rsslib.php");
+          $url = "http://greglu.com/blog/feed/";
+          echo RSS_Display($url, 5);
+          ?>
+          <h1>
+            <a href='http://github.com/enell' target='_blank'>Github Feed</a>
+          </h1>
+          <?php
+          require_once("atomlib.php");
+          $url = "http://github.com/enell.atom";
+          echo Atom_Display($url, 5);
+          ?>
+          <h1>
+            Wise Words
+          </h1>
+          <p>
+            "Always code as if the person who will maintain your code is a maniac serial killer that knows where you live."
+          </p>
+          <p class='align-right'>
+            - Unknown
+          </p>
         </div>
       </div>
     </div>

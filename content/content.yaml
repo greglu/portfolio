@@ -7,3 +7,4 @@ filters_pre: [ 'haml' ]
 # Custom 
 title: About
 name: about
+extension: "php"

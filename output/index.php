@@ -3,7 +3,7 @@
   <head>
     <title>
       Greg Lu
-       - Skills
+       - About
     </title>
     <meta content='text/html; charset=iso-8859-1' http-equiv='Content-Type' />
     <link href='/css/EliteCircle.css' rel='stylesheet' type='text/css' />
@@ -45,10 +45,10 @@
           </p>
         </div>
         <ul>
-          <li><a href="/">about</a></li>
-          <li><a href="/demos/">demos</a></li>
-          <li><a id="current" href="/skills/">skills</a></li>
-          <li><a href="/work/">work</a></li>
+          <li><a id="current" href="/index.php">about</a></li>
+          <li><a href="/demos/index.php">demos</a></li>
+          <li><a href="/skills/index.php">skills</a></li>
+          <li><a href="/work/index.php">work</a></li>
           <li>
             <a href='/Gregory_Lu-CV.pdf'>CV</a>
           </li>
@@ -59,108 +59,61 @@
       <div id='content'>
         <div id='main'>
           <h1>
-            Skills and Tools
+            About
           </h1>
-          <h2>
-            Web Development
-          </h2>
-          <ul>
-            <li>
-              <a href='http://rubyonrails.org/' target='_blank'>Ruby on Rails:</a>
-              web framework
-            </li>
-            <li>
-              <a href='http://rspec.info/' target='_blank'>Rspec:</a>
-              Behavior Driven Development (BDD) framework
-            </li>
-            <li>
-              <a href='http://www.mysql.com/' target='_blank'>MySQL:</a>
-              open source database
-            </li>
-            <li>
-              <a href='http://php.net/' target='_blank'>PHP:</a>
-              web development scripting language
-            </li>
-            <li>
-              <a href='#'>AJAX / Javascript:</a>
-              interactive web application technology
-            </li>
-            <li>
-              <a href='#'>XHTML, CSS:</a>
-              web technologies
-            </li>
-            <li>
-              <a href='#'>REST, SOAP:</a>
-              web services
-            </li>
-            <li>
-              <a href='#'>RSS, Atom:</a>
-              standardized web syndication
-            </li>
-            <li>
-              <a href='http://seleniumhq.org/' target='_blank'>Selenium</a>
-              ,
-              <a href='http://wtr.rubyforge.org/' target='_blank'>WATIR:</a>
-              web application testing
-            </li>
-            <li>
-              <a href='http://aws.amazon.com/' target='_blank'>Amazon Web Services:</a>
-              cloud computing for web applications
-            </li>
-            <li>
-              <a href='http://haml.hamptoncatlin.com/' target='_blank'>HAML:</a>
-              templating language
-            </li>
-          </ul>
-          <h2>
-            Project Management
-          </h2>
-          <ul>
-            <li>
-              <a href='http://www.capify.org/' target='_blank'>Capistrano:</a>
-              automated deployment
-            </li>
-            <li>
-              <a href='http://git-scm.com/' target='_blank'>GIT</a>
-              ,
-              <a href='http://subversion.tigris.org/' target='_blank'>Subversion</a>
-              ,
-              <a href='http://www.perforce.com/' target='_blank'>Perforce:</a>
-              revision control systems
-            </li>
-            <li>
-              <a href='http://www.github.com' target='_blank'>Github:</a>
-              social coding and collaboration
-            </li>
-            <li>
-              <a href='http://lighthouseapp.com/' target='_blank'>Lighthouse</a>
-              ,
-              <a href='http://trac.edgewall.org/' target='_blank'>Trac</a>
-              ,
-              <a href='http://www.redmine.org/' target='_blank'>Redmine</a>
-              ,
-              <a href='http://www.basecamphq.com/' target='_blank'>Basecamp:</a>
-              project management and issue tracking
-            </li>
-            <li>
-              <a href='http://www.campfirenow.com/' target='_blank'>Campfire:</a>
-              project collaboration
-            </li>
-          </ul>
-          <h2>
-            Miscellaneous
-          </h2>
-          <ul>
-            <li>
-              Programming Languages: Java, C, C++
-            </li>
-            <li>
-              Operating Systems: Windows, Mac OS X, Linux
-            </li>
-            <li>
-              Productivity and Office Software: Microsoft Office and Adobe Photoshop
-            </li>
-          </ul>
+          <p>
+            I'm currently living in Montreal, studying towards a Software Engineering degree at
+            <a href='http://www.mcgill.ca' target='_blank'>McGill University.</a>
+             I have been doing web development for over 6 years now, starting with PHP and then moving to database backed web applications with MySQL. For the past 3 years, I've been working with Ruby on Rails professionally for creating web applications, but have worked with many other languages and technologies throughout my own explorations and university studies.
+          </p>
+          <p>
+            In terms of development, I'm a strong believer in
+            <a href='http://en.wikipedia.org/wiki/Test_driven_development' target='_blank'>Test</a>
+            /
+            <a href='http://en.wikipedia.org/wiki/Behavior_Driven_Development' target='_blank'>Behavior</a>
+            Driven Development, writing DRY code (see wise words on the right), and the use of frameworks. I'm a strong opponent against the
+            <a href='http://en.wikipedia.org/wiki/Waterfall_model' target='_blank'>waterfall development model</a>
+            for the majority of projects (although it is required in very rare cases), and instead opt for more iterative approaches like
+            <a href='http://en.wikipedia.org/wiki/Agile_software_development' target='_blank'>agile</a>
+            or
+            <a href='http://en.wikipedia.org/wiki/Scrum_(development)' target='_blank'>scrum</a>
+            .
+          </p>
+          <p>
+            Project management and design is where I hope to expand my career more towards, but I also enjoy development just as much.
+          </p>
+          <p>
+            Please refer to the other sections of my portfolio, and feel free to
+            <a href='#' onclick="$.scrollTo( '#contact', 1000 );">contact me</a>
+            with the information below if you have any questions.
+          </p>
+        </div>
+        <div id='sidebar'>
+          <h1>
+            <a href='http://www.greglu.com/blog' target='_blank'>Blog Feed</a>
+          </h1>
+          <?php
+          require_once("rsslib.php");
+          $url = "http://greglu.com/blog/feed/";
+          echo RSS_Display($url, 5);
+          ?>
+          <h1>
+            <a href='http://github.com/enell' target='_blank'>Github Feed</a>
+          </h1>
+          <?php
+          require_once("atomlib.php");
+          $url = "http://github.com/enell.atom";
+          echo Atom_Display($url, 5);
+          ?>
+          <h1>
+            Wise Words
+          </h1>
+          <p>
+            "Always code as if the person who will maintain your code is a maniac serial killer that knows where you live."
+          </p>
+          <p class='align-right'>
+            - Unknown
+          </p>
         </div>
       </div>
     </div>
