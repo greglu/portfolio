@@ -153,6 +153,11 @@
               - (514) 815-3611
             </li>
             <li>
+              <a href='http://www.twitter.com/greglu'>
+                <strong>Twitter - @greglu</strong>
+              </a>
+            </li>
+            <li>
               <a href='/Gregory_Lu-CV.pdf'>
                 <strong>Curriculum Vitae</strong>
               </a>
