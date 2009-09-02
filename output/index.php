@@ -101,11 +101,11 @@
           echo RSS_Display($url, 5);
           ?>
           <h1>
-            <a href='http://github.com/enell' target='_blank'>Github Feed</a>
+            <a href='http://github.com/greglu' target='_blank'>Github Feed</a>
           </h1>
           <?php
           require_once($_SERVER["DOCUMENT_ROOT"] . "/atomlib.php");
-          $url = "http://github.com/enell.atom";
+          $url = "http://github.com/greglu.atom";
           echo Atom_Display($url, 5);
           ?>
           <h1>
@@ -158,7 +158,7 @@
               </a>
             </li>
             <li>
-              <a href='http://github.com/enell' target='_blank'>
+              <a href='http://github.com/greglu' target='_blank'>
                 <strong>Github Profile</strong>
               </a>
             </li>
